@@ -4,6 +4,12 @@ package com.example.basicsofkotlins
 fun main() {
     val person = Person("name", 12)
     val defaultValues = Person()
+
+    // easy copy able
+    val dataClass = DataClass(10, "10")
+    dataClass.copy(id = 15)
+    val (name) = dataClass
+    print(name)
 }
 
 class ClassThings {}
@@ -47,4 +53,7 @@ class Car() {
         owner = ""
     }
 }
+
+//data class
+data class DataClass(val id: Int, val name: String)
 

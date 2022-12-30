@@ -1,5 +1,5 @@
 package com.example.basicsofkotlins
 
-fun main(){
-
+fun main() {
+    print("Hello Mama")
 }

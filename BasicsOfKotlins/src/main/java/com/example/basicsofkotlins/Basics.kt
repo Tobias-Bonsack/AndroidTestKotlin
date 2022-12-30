@@ -1,6 +1,10 @@
 package com.example.basicsofkotlins
 
-fun main() {
+fun main() {/*
+    zusaetzliche visibilities
+    internal -> nur innerhalb des moduls
+    open -> erlaubt das override und vererben
+     */
     print("Hello Mama")
 
     // immutable variable
@@ -43,9 +47,7 @@ fun main() {
     //if
     if (aByte is Byte) { // check for class
     } else if (false) {
-
     } else {
-
     }
 
     //when
@@ -82,6 +84,13 @@ fun main() {
     for (num in 1 until 10) { // in range 1-9
     }
     for (num in 1 downTo -10 step -2) { // in range 1 to -10 by steps -2
+    }
+
+    // try catch
+    try {
+    } catch (e: Exception) {
+        throw e
+    } finally {
     }
 }
 

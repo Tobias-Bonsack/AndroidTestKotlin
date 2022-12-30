@@ -12,7 +12,13 @@ fun main() {
     print(name)
 }
 
-class ClassThings {}
+class ClassThings {
+    class NestedClass { //zugriff nicht auf private der outerclass
+    }
+
+    inner class InnerClass { //erlaubt zugrif auf private der outerclass
+    }
+}
 
 //with constructors ... "constructor" is optional
 open class Person constructor(name: String = "default", age: Int = 0) {
@@ -94,4 +100,6 @@ abstract class AAbstract {
     abstract var variable: Any
     abstract fun run();
 }
+
+
 

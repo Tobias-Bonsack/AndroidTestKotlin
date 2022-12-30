@@ -35,6 +35,11 @@ fun main() {
     val len3 = nullableOne?.length ?: 1
     val len2 = nullableOne!!.length // force
 
+    //typecasting
+    val obj3: Any = "String"
+    val obj2: String? = obj3 as? String
+    println(obj2?.length ?: "")
+
     //if
     if (aByte is Byte) { // check for class
     } else if (false) {

@@ -15,7 +15,7 @@ fun main() {
 class ClassThings {}
 
 //with constructors ... "constructor" is optional
-class Person constructor(name: String = "default", age: Int = 0) {
+open class Person constructor(name: String = "default", age: Int = 0) {
     var otherThings: Int? = null
     var name: String
 
@@ -28,8 +28,18 @@ class Person constructor(name: String = "default", age: Int = 0) {
         this.otherThings = year
     }
 
-    fun method(): Unit {
+    open fun method(): Unit {
         return
+    }
+}
+
+//inheritance
+/*
+alles was du ueberschreiben willst muss 'open' sein
+ */
+class Mann(name: String, age: Int, size: Short) : Person(name, age) {
+    override fun method() {
+        super.method()
     }
 }
 
@@ -56,4 +66,32 @@ class Car() {
 
 //data class
 data class DataClass(val id: Int, val name: String)
+
+//interface
+interface IInterface {
+    val value: String
+    fun function(): String
+    fun functionVoid()
+    open fun toOverride() {
+        print("something")
+    }
+}
+
+class interImpl(override val value: String, override var variable: Any) : IInterface, AAbstract() {
+    override fun function(): String = ""
+
+    override fun functionVoid() {
+    }
+
+    override fun toOverride() {
+    }
+
+    override fun run() {
+    }
+}
+
+abstract class AAbstract {
+    abstract var variable: Any
+    abstract fun run();
+}
 

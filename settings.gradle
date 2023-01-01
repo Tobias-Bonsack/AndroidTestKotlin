@@ -16,3 +16,4 @@ rootProject.name = "AndroidTestKotlin"
 include ':app'
 include ':BasicsOfKotlins'
 include ':AgeInMinutes'
+include ':Calculator'

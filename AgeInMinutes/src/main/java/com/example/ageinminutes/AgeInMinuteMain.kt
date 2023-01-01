@@ -24,7 +24,7 @@ class AgeInMinuteMain : AppCompatActivity() {
 
     private fun updateDate() {
         findViewById<TextView>(R.id.textView4).text = datePickerFragment.getDateString()
-        calculateMinutes()
+        calculateMinutes()a
     }
 
     private fun calculateMinutes(): Unit {

@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/AgeInMinutes" />
             <option value="$PROJECT_DIR$/BasicsOfKotlins" />
             <option value="$PROJECT_DIR$/Calculator" />
+            <option value="$PROJECT_DIR$/RoomDatabase" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

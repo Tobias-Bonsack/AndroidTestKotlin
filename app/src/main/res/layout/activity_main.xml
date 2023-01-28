@@ -29,5 +29,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="calculator" />
+
+        <Button
+            android:id="@+id/quizBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz app" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

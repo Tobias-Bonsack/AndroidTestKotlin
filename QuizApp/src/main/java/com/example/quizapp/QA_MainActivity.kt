@@ -12,7 +12,6 @@ class QA_MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_qa_main)
-        window.decorView.windowInsetsController?.hide(WindowInsets.Type.statusBars())
         supportActionBar?.hide()
 
         val nameTV = findViewById<TextView>(R.id.nameTV)
@@ -23,6 +22,7 @@ class QA_MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
             startActivity(Intent(this, QaQuestionsActivity::class.java))
+            finish() // can not go back
         }
     }
 

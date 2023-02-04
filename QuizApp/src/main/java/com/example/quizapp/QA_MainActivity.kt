@@ -21,7 +21,11 @@ class QA_MainActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please enter Name", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
-            startActivity(Intent(this, QaQuestionsActivity::class.java))
+            val intent = Intent(this, QaQuestionsActivity::class.java)
+            intent.apply {
+                putExtra("progressValue", 0)
+            }
+            startActivity(intent)
             finish() // can not go back
         }
     }

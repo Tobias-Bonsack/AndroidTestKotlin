@@ -3,6 +3,9 @@
 
     <application>
         <activity
+            android:name=".recyclerVThings.RecyclerMain"
+            android:exported="false" />
+        <activity
             android:name=".RoomMain"
             android:exported="false">
             <meta-data

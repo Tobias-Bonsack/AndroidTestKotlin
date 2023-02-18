@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.ageinminutes.AgeInMinuteMain
 import com.example.calculator.CalculatorMainActivity
 import com.example.quizapp.QA_MainActivity
+import com.example.roomdatabase.RoomMain
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +24,10 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<Button>(R.id.quizBtn).setOnClickListener {
             startActivity(Intent(this, QA_MainActivity::class.java))
+        }
+
+        findViewById<Button>(R.id.button10).setOnClickListener {
+            startActivity(Intent(this, RoomMain::class.java))
         }
     }
 }

@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "saved-entity")
 data class SavedEntity(
-    @PrimaryKey(autoGenerate = true) val id: Int = Integer.MIN_VALUE,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val firstValue: String = "",
     @ColumnInfo(name = "column-info-second") val secondValue: String = ""
 )
